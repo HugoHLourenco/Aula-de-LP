@@ -6,3 +6,6 @@ pre { font-size: 1.2em; }
 .oculta { display: none; }
 .exibe { display: inline; }
 .italico { font-style: italic; }
+body{
+    background-color: darkcyan;
+}
