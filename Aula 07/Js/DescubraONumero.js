@@ -15,11 +15,20 @@ function apostar() {
     var outErros = document.getElementById("outErros")
     var outChances = document.getElementById("outChances")
 
-    if(inNumero == sorteado){
+    if (inNumero == sorteado) {
         alert("Parabéns, você acertou o número!!!")
         btApostar.disabled = true
         btJogar.className = "exibe"
         outDica.textContent = "Parabéns! Você descobriu o número!: " + sorteado
+    } else {
+        if (erros.indexOf(inNumero) >= 0) {
+            alert(`NÚMERO JÁ DIGITADO!!! ${inNumero}`)
+        } else {
+            erros.push(inNumero)
+            var numErros = erros.length
+            var numChances = chances - numErros
+            
+        }
     }
 }
 
