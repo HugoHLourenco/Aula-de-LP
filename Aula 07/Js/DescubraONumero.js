@@ -27,8 +27,11 @@ function apostar() {
             erros.push(inNumero)
             var numErros = erros.length
             var numChances = chances - numErros
-            
+            outErros.textContent = numErros + " (" + erros.join(", ") + ")"
+            outChances.textContent = numChances
         }
+    document.getElementById("inNumero").value = ""
+    document.getElementById("inNumero").focus()
     }
 }
 
