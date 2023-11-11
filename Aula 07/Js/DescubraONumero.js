@@ -30,11 +30,11 @@ function apostar() {
             outErros.textContent = numErros + " (" + erros.join(", ") + ")"
             outChances.textContent = numChances
         }
-    document.getElementById("inNumero").value = ""
-    document.getElementById("inNumero").focus()
+        document.getElementById("inNumero").value = ""
+        document.getElementById("inNumero").focus()
     }
 }
-
 var btApostar = document.getElementById("btApostar")
 btApostar.addEventListener("click", apostar)
+
 
